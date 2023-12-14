@@ -1,11 +1,11 @@
 repo_name: spryker-community/spryker-idea-plugin
-report_id: 6d59831c2ac197efcfda81b3efe2f85d
+report_id: e4f0cdc7ba33dc15981229140d7f3f20
 repo_type: Public
-timestamp: '2023-11-09T17:23:03+00:00'
-requested_by: j-gartner-txb
+timestamp: '2023-12-14T09:51:24+00:00'
+requested_by: gxjansen
 provider: github
 branch: main
-detected_tools_count: 5
+detected_tools_count: 6
 tools:
 - name: Java
   description: A concurrent, class-based, object-oriented, language specifically designed
@@ -17,15 +17,17 @@ tools:
   sub_category: Languages
   image_url: https://img.stackshare.io/service/995/K85ZWV2F.png
   detection_source: Repo Metadata
-- name: Kotlin
-  description: Statically typed Programming Language targeting JVM and JavaScript
-  website_url: https://kotlinlang.org/
-  open_source: true
-  hosted_saas: true
-  category: Languages & Frameworks
-  sub_category: Languages
-  image_url: https://img.stackshare.io/service/3750/pCfEzr6L.png
-  detection_source: Repo Metadata
+- name: pgvector
+  description: Open-source vector similarity search for Postgres
+  website_url: https://github.com/pgvector/pgvector/
+  open_source: false
+  hosted_saas: false
+  category: Data Stores
+  sub_category: Database Tools
+  image_url: https://img.stackshare.io/service/109221/default_b888cdf5617d936aa6aacf130911906955508639.png
+  detection_source: src/main/resources/templates/phpClass.txt
+  last_updated_by: lev.stejngardt
+  last_updated_on: 2021-09-07 14:11:23.000000000 Z
 - name: Git
   description: Fast, scalable, distributed revision control system
   website_url: http://git-scm.com/
@@ -43,7 +45,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Continuous Integration
   image_url: https://img.stackshare.io/service/11563/actions.png
-  detection_source: ".github/workflows/release.yml"
+  detection_source: ".github/workflows/build.yml"
   last_updated_by: jochen
   last_updated_on: 2021-09-06 13:28:34.000000000 Z
 - name: Gradle
@@ -55,6 +57,17 @@ tools:
   category: Build, Test, Deploy
   sub_category: Java Build Tools
   image_url: https://img.stackshare.io/service/975/gradlephant-social-black-bg.png
-  detection_source: gradlew.bat
+  detection_source: gradlew
   last_updated_by: jochen
   last_updated_on: 2021-09-06 13:28:34.000000000 Z
+- name: LangChain
+  description: Build AI apps with LLMs through composability
+  website_url: https://github.com/hwchase17/langchain
+  open_source: true
+  hosted_saas: false
+  category: Communications
+  sub_category: Large Language Model Tools
+  image_url: https://img.stackshare.io/service/48790/default_5b6c6b73f1ff3775c85d2a1ba954cb87e30cbf13.jpg
+  detection_source: src/main/resources/templates/phpClass.txt
+  last_updated_by: lev.stejngardt
+  last_updated_on: 2021-09-07 14:11:23.000000000 Z
